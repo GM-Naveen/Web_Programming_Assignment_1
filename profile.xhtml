@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile - Professional Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="profile-styles.css" />
+</head>
+<body>
+    <!-- Fixed Header -->
+    <div class="header">
+        <div class="header-content">
+            <h1 class="name">NAVEEN RAMADAS</h1>
+            <p class="designation">Software Engineer</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav-menu">
+        <div class="nav-links">
+            <a href="index.xhtml" class="nav-link">Home</a>
+            <a href="profile.xhtml" class="nav-link active">Profile</a>
+            <a href="academics.xhtml" class="nav-link">Academics</a>
+            <a href="qualifications.xhtml" class="nav-link">Qualifications</a>
+            <a href="contacts.xhtml" class="nav-link">Contact</a>
+        </div>
+        <button id="themeToggle" class="theme-toggle">🌙 Dark Mode</button>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <div class="page-title"></div>
+
+        <!-- Profile Card -->
+        <div id="profileCard" class="profile-card">
+            <div class="badge pro-badge">
+                <span class="badge-icon">⭐</span>
+                <span class="badge-text">Pro Member</span>
+            </div>
+
+            <div class="profile-image-container">
+                <img src="img.jpg" alt="Profile Picture" class="profile-image" />
+                <div class="decorative-icon"><span class="icon">🚀</span></div>
+            </div>
+
+            <div class="profile-content">
+                <h2 class="profile-name">Naveen Ramadas</h2>
+                <p class="profile-title">Senior Software Engineer</p>
+                <div class="profile-bio">
+                    <p>Passionate full-stack developer with 5+ years of experience building scalable web applications. 
+                    Specialized in React, Node.js, and cloud technologies. Love solving complex problems and 
+                    creating innovative solutions that make a real impact.</p>
+                </div>
+
+                <div class="profile-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Years Exp.</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
+                </div>
+
+                <div class="profile-actions">
+                    <button class="btn-primary">Connect</button>
+                    <button class="btn-secondary">Download CV</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background Animation -->
+    <div class="bg-animation">
+        <div class="floating-element element-1"></div>
+        <div class="floating-element element-2"></div>
+        <div class="floating-element element-3"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="footer-title">Naveen Ramadas</h3>
+                <p class="footer-subtitle">Software Engineer</p>
+                <p class="footer-description">Building innovative solutions for tomorrow's challenges.</p>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.xhtml">Home</a></li>
+                    <li><a href="profile.xhtml">Profile</a></li>
+                    <li><a href="academics.xhtml">Academics</a></li>
+                    <li><a href="qualifications.xhtml">Qualifications</a></li>
+                    <li><a href="contacts.xhtml">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-heading">Connect</h4>
+                <div class="footer-social">
+                    <a href="#" class="social-link">💼 LinkedIn</a>
+                    <a href="#" class="social-link">🐙 GitHub</a>
+                    <a href="#" class="social-link">📧 Email</a>
+                    <a href="#" class="social-link">📱 Twitter</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-heading">Contact Info</h4>
+                <div class="footer-contact">
+                    <p>📧 naveenramadas004@gmail.com</p>
+                    <p>📱 +91 6282117425</p>
+                    <p>📍 Thrissur, India</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Naveen Ramadas. All rights reserved.</p>
+            <p>Made with ❤️ using XHTML and CSS</p>
+            <!-- W3C Validation Badge -->
+            <p>
+                <a href="https://validator.w3.org/check?uri=referer">
+                    <img src="https://www.w3.org/Icons/valid-xhtml10" 
+                         alt="Valid XHTML 1.0 Transitional" 
+                         height="31" width="88" />
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function () {
+        var toggleBtn = document.getElementById("themeToggle");
+        toggleBtn.addEventListener("click", function() {
+            document.body.classList.toggle("light-mode");
+            toggleBtn.textContent = document.body.classList.contains("light-mode") 
+                ? "🌞 Light Mode" 
+                : "🌙 Dark Mode";
+        });
+    });
+    </script>
+</body>
+</html>

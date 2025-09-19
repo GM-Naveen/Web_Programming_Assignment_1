@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naveen Ramadas - Contact</title>
+    <link rel="stylesheet" type="text/css" href="contacts-styles.css" />
+</head>
+<body>
+    <!-- Fixed Header -->
+    <div class="header">
+        <div class="header-content">
+            <h1 class="name">Naveen Ramadas</h1>
+            <p class="designation">Software Engineer</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav-menu">
+        <div class="nav-links">
+            <a href="index.xhtml" class="nav-link">Home</a>
+            <a href="profile.xhtml" class="nav-link">Profile</a>
+            <a href="academics.xhtml" class="nav-link">Academics</a>
+            <a href="qualifications.xhtml" class="nav-link">Qualifications</a>
+            <a href="contacts.xhtml" class="nav-link active">Contact</a>
+        </div>
+        <button id="themeToggle" class="theme-toggle">🌙 Dark Mode</button>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <h2 class="page-title">Get In Touch</h2>
+
+        <!-- Contact Form -->
+        <div class="section-card">
+            <h3 class="section-title">Contact Form</h3>
+            <form class="contact-form" action="#" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required="required" />
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required="required" />
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required="required" />
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" required="required"></textarea>
+
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+        </div>
+
+        <!-- Direct Contact Info -->
+        <div class="section-card">
+            <h3 class="section-title">Direct Contact</h3>
+            <p>📧 Email: naveenramadas004@gmail.com</p>
+            <p>📱 Phone: +91 6282117425</p>
+            <p>📍 Location: Thrissur, India</p>
+        </div>
+
+        <!-- Social Links -->
+        <div class="section-card">
+            <h3 class="section-title">Connect with Me</h3>
+            <div class="social-links">
+                <a href="#" class="social-link">💼 LinkedIn</a>
+                <a href="#" class="social-link">🐙 GitHub</a>
+                <a href="#" class="social-link">📱 Twitter</a>
+                <a href="#" class="social-link">📷 Instagram</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="footer-title">Naveen Ramadas</h3>
+                <p class="footer-subtitle">Software Engineer</p>
+                <p class="footer-description">Building innovative solutions for tomorrow's challenges.</p>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.xhtml">Home</a></li>
+                    <li><a href="profile.xhtml">Profile</a></li>
+                    <li><a href="academics.xhtml">Academics</a></li>
+                    <li><a href="qualifications.xhtml">Qualifications</a></li>
+                    <li><a href="contacts.xhtml">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-heading">Connect</h4>
+                <div class="footer-social">
+                    <a href="#" class="social-link">💼 LinkedIn</a>
+                    <a href="#" class="social-link">🐙 GitHub</a>
+                    <a href="#" class="social-link">📧 Email</a>
+                    <a href="#" class="social-link">📱 Twitter</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-heading">Contact Info</h4>
+                <div class="footer-contact">
+                    <p>📧 naveenramadas004@gmail.com</p>
+                    <p>📱 +91 6282117425</p>
+                    <p>📍 Thrissur, India</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Naveen Ramadas. All rights reserved.</p>
+            <p>Made with ❤️ using XHTML &amp; CSS</p>
+            <p>
+                <a href="https://validator.w3.org/check?uri=referer">
+                    <img src="https://www.w3.org/Icons/valid-xhtml10" 
+                         alt="Valid XHTML 1.0 Transitional" 
+                         height="31" width="88" />
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Theme Toggle Script -->
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+            var toggleBtn = document.getElementById("themeToggle");
+            toggleBtn.addEventListener("click", function() {
+                document.body.classList.toggle("light-mode");
+                toggleBtn.textContent = document.body.classList.contains("light-mode") 
+                    ? "🌞 Light Mode" 
+                    : "🌙 Dark Mode";
+            });
+        });
+    </script>
+</body>
+</html>
